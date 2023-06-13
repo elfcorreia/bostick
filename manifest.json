@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "ostdsti",
+  "description": "osticket enhancements",
+  "version": "1.0",
+  "icons": {
+    "64": "icons/icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://suporte.tic.ufrj.br/scp/*",
+        "*://suporte.tic.ufrj.br/scp/tickets.php*"
+      ],
+      "js": [
+        "content_script.js"
+      ]
+    }
+  ]
+}
